@@ -6,15 +6,15 @@ import { MdOutlineMail, MdLockOutline } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 function Login() {
     return (
-        <Wrapper>
+        <Wrapper className='section'>
             <h1>Sign In</h1>
             <form>
                 <div className='form-item'>
-                    <MdOutlineMail/>
+                    <MdOutlineMail />
                     <input type="email" name="email" placeholder='Email address'></input>
                 </div>
                 <div className='form-item'>
-                    <MdLockOutline/>
+                    <MdLockOutline />
                     <input type="password" name="password" placeholder='Password'></input>
                 </div>
                 <button>Sign In</button>
@@ -23,9 +23,16 @@ function Login() {
             <div className='social-login'>
                 <p>Sign In via socials</p>
                 <div>
-                    <FaFacebookF />
-                    <FaGoogle />
-                    <FaTwitter />
+                    <span style={{ marginRight: '1rem' }}>
+                        <FaFacebookF />
+                    </span>
+                    <span style={{ marginRight: '1rem' }}>
+                        <FaGoogle />
+                    </span>
+                    <span>
+                        <FaTwitter />
+                    </span>
+
                 </div>
             </div>
         </Wrapper>
@@ -35,7 +42,7 @@ function Login() {
 export default Login
 
 const Wrapper = styled.div`
-    width:300px;
+    width:332px;
     margin:0 auto;
     padding-top:3rem;
     h1{
@@ -48,7 +55,7 @@ const Wrapper = styled.div`
     form{
         margin-bottom:1rem;
         input{
-            width:88.5%;
+            width:80%;
             padding-left:3rem;
         }
         button{
@@ -68,7 +75,7 @@ const Wrapper = styled.div`
             width:332px;
             svg{
                 background-color:#f5f5f5;
-                padding:1rem 3rem;
+                padding:1rem 2.3rem;
                 border-radius:0.5rem;
                 font-size:1.5rem;
                 cursor:pointer;

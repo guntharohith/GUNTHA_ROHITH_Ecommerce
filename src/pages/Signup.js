@@ -37,7 +37,7 @@ function Signup() {
 export default Signup
 
 const Wrapper = styled.div`
-    width:300px;
+    width:332px;
     margin:0 auto;
     padding-top:3rem;
     h1{
@@ -50,7 +50,7 @@ const Wrapper = styled.div`
     form{
         margin-bottom:1rem;
         input{
-            width:88.5%;
+            width:80%;
         }
         .name{
             display:grid;
