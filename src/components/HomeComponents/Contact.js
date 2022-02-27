@@ -68,7 +68,15 @@ const Wrapper = styled.div`
         display:flex;
         justify-content:center;
         form{
-            width:400px;
+            width:332px;
+            input,textarea{
+                width:89%;
+            }
+            .checkbox{
+                input{
+                    width:1rem;
+                }
+            }
             button{
                 width:100%;
                 padding:1rem;
